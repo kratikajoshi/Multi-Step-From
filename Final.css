@@ -119,8 +119,23 @@ p {
     padding: 10px;
     padding-top: 15px; 
     overflow: hidden;
-    
-  }
+    }
 
+  @media only screen and (max-width: 480px) {
+
+    p {
+      font-size: 0.6rem;
+    }
+
+    .box-image {
+      height: 50px; 
+    }
+
+    .box-content {  
+      padding-top: 20px; 
+      overflow: hidden;  
+    }
+
+}
 }
 
