@@ -1,0 +1,126 @@
+/* CSS file for final page */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.first-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-top: 20px;
+  margin-right: 90px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 350px; 
+  margin: 30px 10px; 
+}
+
+.box-content {
+  padding: 15px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-text {
+  flex: 1;
+  font-size:smaller;
+  margin-bottom: 5px;
+}
+
+.box-image {
+  height: 90px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.stack {
+  background-color: #dbbb3a;
+  width: 110px;
+  height: 25px;
+  border: 1px solid #dbbb3a;
+  border-radius: 12px;
+  padding: 5px;
+  text-align: center;
+  font-size: x-small;
+  font-weight: 700;
+  position: relative;
+  top: 17px;
+  left: 240px; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .main-heading {
+    font-size: 1.5rem; 
+  }
+
+  .box {
+    width: 100%; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+
+  .boxes-container {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 10px; 
+    margin-right: 0; 
+  }
+
+  .box-image {
+    height: 80px; 
+  }
+  
+  .boxes {
+    flex-direction: column;
+    width: 65%; 
+    margin: 10px 10px; 
+    padding: 5; 
+    height: 130px;
+  }
+  
+  .stack {
+    left: 7px; 
+  }
+
+  .box-content {
+    padding: 10px;
+    padding-top: 15px; 
+    overflow: hidden;
+    
+  }
+
+}
+

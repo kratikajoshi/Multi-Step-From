@@ -1,0 +1,57 @@
+/* CSS file for Loader page */
+
+.loader-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.loader-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid #f0d04a;
+  border-top-color: transparent;
+  animation: spin 2s linear infinite;
+}
+
+.loader-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 12px;
+  width: 450px;
+  text-align: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media queries for mobile and tablet devices */
+@media (max-width: 768px) {
+  .loader-text {
+    width: 80%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .loader-text {
+    width: 100%; 
+    font-size: 14px; 
+  }
+  .loader-circle {
+    width: 40px; 
+    height: 40px;
+    border-width: 4px; 
+  }
+}
